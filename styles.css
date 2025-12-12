@@ -9,9 +9,19 @@ body {
   font-family: 'Kaushan Script', cursive;
   margin: 0;
   overflow: hidden;
+  text-align: center
 }
 
 .logo {
   font-family: 'Creepster', system-ui;
   font-weight: lighter;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
