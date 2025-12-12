@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kaushan+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Kaushan Script', cursive;
+  margin: 0;
+  overflow: hidden;
+}
+
+.logo {
+  font-family: 'Creepster', system-ui;
+  font-weight: lighter;
+}
