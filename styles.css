@@ -28,6 +28,11 @@ body {
   color: var(--main);
 }
 
+p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
 .btn {
   background-color: transparent;
   color: var(--main);
@@ -59,6 +64,8 @@ body {
 }
 
 .screen-2-title {
+  color: var(--main);
+  font-size: 4rem;
   line-height: 1.4;
 }
 
@@ -68,6 +75,15 @@ body {
   justify-content: center;
   list-style-type: none;
   padding: 0;
+}
+
+.enemies-list li {
+  margin: 10px;
+}
+
+.choose-enemy-btn {
+  padding: 1.5rem;
+  min-width: 200px;
 }
 
 .choose-enemy-btn img {
