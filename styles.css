@@ -47,7 +47,7 @@ p {
 
 .btn:hover {
   background-color: var(--main);
-  color: var(--dark);
+  color: var(--light);
 }
 
 .screen {
@@ -60,7 +60,7 @@ p {
 }
 
 .screen.up {
-  margin-top: -200vh;
+  margin-top: -100vh;
 }
 
 .screen-2-title {
