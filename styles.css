@@ -60,12 +60,12 @@ p {
 }
 
 .screen.up {
-  margin-top: -100vh;
+  margin-top: -200vh;
 }
 
 .screen-2-title {
   color: var(--main);
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.4;
 }
 
