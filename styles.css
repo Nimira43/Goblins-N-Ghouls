@@ -58,8 +58,13 @@ body {
   margin-top: -100vh;
 }
 
+.screen-2-title {
+  line-height: 1.4;
+}
+
 .choose-enemy-btn img {
   width: 100px;
   height: 100px;
   object-fit: contain;
 }
+
