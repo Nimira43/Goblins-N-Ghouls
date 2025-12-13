@@ -92,3 +92,6 @@ p {
   object-fit: contain;
 }
 
+.game-container {
+  position: relative;
+}
