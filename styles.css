@@ -110,3 +110,12 @@ p {
   right: 20px;
 }
 
+.message {
+  line-height: 1.7;
+  background-color: var(--main);
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+}
