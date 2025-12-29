@@ -134,7 +134,7 @@ function endGame() {
 
 function createRestartButton() {
   restartBtn = document.createElement('button')
-  restartBtn.classList.add('btn')
+  restartBtn.classList.add('btn', 'restart-btn')
   restartBtn.innerText = 'Restart'
   restartBtn.style.marginTop = '200px'
   restartBtn.addEventListener('click', startGame)
