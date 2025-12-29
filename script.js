@@ -9,16 +9,11 @@ const message = document.getElementById('message')
 let seconds = 0
 let score = 0
 let selectedEnemy = null
-
 let timer = null
 let gameRunning = false
 let enemyCount = 0
-
-// 
 let spawnInterval = 2000
 let lastSpawnTime = 0
-
-// 
 let restartBtn = null
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'))
@@ -76,8 +71,8 @@ function gameLoop(timestamp) {
   if (timestamp - lastSpawnTime > spawnInterval) {
     createEnemy()
     lastSpawnTime = timestamp
-
-    spawnInterval = Math.max(300, spawnInterval - 50)
+    spawnInterval = spawnInterval * 0.97
+    spawnInterval = Math.max(700, spawnInterval)
   }
 
   if (enemyCount >= 50) {
@@ -131,7 +126,7 @@ function endGame() {
   gameRunning = false
   clearInterval(timer)
 
-  message.innerText = "The horde overwhelms you. Darkness claims you."
+  message.innerText = 'The horde overwhelms you. Darkness claims you.'
   message.classList.add('visible')
 
   createRestartButton()
@@ -140,10 +135,8 @@ function endGame() {
 function createRestartButton() {
   restartBtn = document.createElement('button')
   restartBtn.classList.add('btn')
-  restartBtn.innerText = "Restart"
-  restartBtn.style.marginTop = "200px"
-
+  restartBtn.innerText = 'Restart'
+  restartBtn.style.marginTop = '200px'
   restartBtn.addEventListener('click', startGame)
-
   gameContainer.appendChild(restartBtn)
 }
