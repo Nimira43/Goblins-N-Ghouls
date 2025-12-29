@@ -111,6 +111,9 @@ p {
 }
 
 .message {
+  position: absolute;
+  top: 0;
+  left: 50%;
   line-height: 1.7;
   background-color: var(--main);
   padding: 20px;
@@ -118,6 +121,9 @@ p {
   text-align: center;
   font-size: 2rem;
   font-weight: lighter;
+  opacity: 0;
+  transform: translate(-50%, -150%);
+  transition: var(--transition);
 }
 
 .message.visible {
