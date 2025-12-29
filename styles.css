@@ -141,3 +141,7 @@ p {
   transform: translate(-50%, -50%) scale(1);
   transition: var(--transition);
 }
+
+.enemy.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
