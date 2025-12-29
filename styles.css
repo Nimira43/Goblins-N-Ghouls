@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 :root {
@@ -40,7 +41,6 @@ p {
   font-family: inherit;
   font-size: 2rem;
   padding: 0.5rem 1.5rem;
-  outline: none;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -138,6 +138,7 @@ p {
   justify-content: center;
   width: 100px;
   height: 100px;
+  cursor: pointer;
   transform: translate(-50%, -50%) scale(1);
   transition: var(--transition);
 }
@@ -149,6 +150,13 @@ p {
 .enemy img {
   width: 100px;
   height: 100px;
+  -webkit-user-drag: none;
+}
+
+.enemy,
+.enemy img,
+.btn {
+  outline: none;
 }
 
 .restart-btn {
