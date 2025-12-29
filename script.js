@@ -12,6 +12,16 @@ let selectedEnemy = []
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'))
 
+chooseEnemyBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const img = btn.querySelector('img')
+    const src = img.getAttribute('src')
+    const alt = img.getAttribute('alt')
+    
+  })
+})
+
+
 function startGame() {
   setInterval(increaseTime, 1000)
 }
