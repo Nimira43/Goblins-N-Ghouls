@@ -16,8 +16,12 @@ function startGame() {}
 function increaseTime() {}
 function createEnemy() {}
 function getRandomLocation() {}
-function catchEnemy() {}
-function addEnemies() { }
+function catchEnemy() { }
+
+function addEnemies() { 
+  setTimeout(createEnemy, 1000)
+  setTimeout(createEnemy, 1500)
+}
 
 function increaseScore() {
   score++
