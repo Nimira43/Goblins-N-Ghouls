@@ -15,8 +15,14 @@ startBtn.addEventListener('click', () => screens[0].classList.add('up'))
 function startGame() {}
 function increaseTime() {}
 function createEnemy() {}
-function getRandomLocation() {}
-function catchEnemy() { }
+function getRandomLocation() { }
+
+function catchEnemy() { 
+  increaseScore()
+  this.classList.add('caught')
+  setTimeout(() => this.remove(), 2000)
+  addEnemies()
+}
 
 function addEnemies() { 
   setTimeout(createEnemy, 1000)
