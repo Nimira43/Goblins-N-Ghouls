@@ -27,6 +27,8 @@ function createEnemy() {
       style='transform: rotate(${Math.random() * 360}deg)'
     />
   `
+  enemy.addEventListener('click', catchEnemy)
+  gameContainer.appendChild(enemy)
 }
 
 function getRandomLocation() {
