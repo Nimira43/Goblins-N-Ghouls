@@ -14,7 +14,15 @@ startBtn.addEventListener('click', () => screens[0].classList.add('up'))
 
 function startGame() {}
 function increaseTime() {}
-function createEnemy() {}
+function createEnemy() {
+  const enemy = document.createElement('div')
+  enemy.classList.add('enemy')
+  const { x, y } = getRandomLocation()
+  enemy.style.top = `${y}px`
+  enemy.style.left = `${x}px`
+  
+}
+
 function getRandomLocation() {
   const width = window.innerWidth
   const height = window.innerHeight
