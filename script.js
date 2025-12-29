@@ -11,3 +11,11 @@ let score = 0
 let selectedEnemy = []
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'))
+
+function startGame() {}
+function increaseTime() {}
+function createEnemy() {}
+function getRandomLocation() {}
+function catchEnemy() {}
+function addEnemies() {}
+function increaseScore() {}
