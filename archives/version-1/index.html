@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./images/TheFavicon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Gobins 'N Ghouls</title>
+</head>
+<body>
+  <div class="screen">
+    <h1 class="logo">Goblins 'N Ghouls</h1>
+    <button class="btn" id="start-btn">Start</button>
+  </div>
+  <div class="screen">
+    <h1 class="screen-2-title">Choose thy foe...</h1>
+    <ul class="enemies-list">
+      <li>
+        <button class="btn choose-enemy-btn">
+          <p>Spriggan</p>
+          <img src="./images/Spriggan.png" alt="Spriggan">
+        </button>
+      </li>
+      <li>
+        <button class="btn choose-enemy-btn">
+          <p>Barghest</p>
+          <img src="./images/Barghest.png" alt="Barghest">
+        </button>
+      </li>
+      <li>
+        <button class="btn choose-enemy-btn">
+          <p>Skritek</p>
+          <img src="./images/Skritek.png" alt="Skritek">
+        </button>
+      </li>
+      <li>
+        <button class="btn choose-enemy-btn">
+          <p>Moroi</p>
+          <img src="./images/Moroi.png" alt="Moroi">
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div 
+    class="screen game-container"
+    id="game-container"  
+  >
+    <h3 
+      class="time" 
+      id="time"
+    >
+      Time: 00:00
+    </h3>
+    <h3 
+      class="score" 
+      id="score"
+    > 
+      Score: 0
+    </h3>
+    <h5 
+      class="message" 
+      id="message"
+    > 
+      The undead cheer. The goblins laugh. Darkness claims you.
+    </h5>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kaushan+Script&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main: #780202;
+  --dark: #111;
+  --light: #fafafa;
+  --transition: all 0.5s ease-in-out;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--dark); 
+  color: var(--light);
+  font-family: 'Kaushan Script', cursive;
+  margin: 0;
+  overflow: hidden;
+  text-align: center
+}
+
+.logo {
+  font-family: 'Creepster', system-ui;
+  font-weight: lighter;
+  font-size: 5rem;
+  color: var(--main);
+}
+
+p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--main);
+  border: 2px solid var(--main);
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--main);
+  color: var(--light);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.screen-2-title {
+  color: var(--main);
+  font-size: 3rem;
+  line-height: 1.4;
+}
+
+.enemies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.enemies-list li {
+  margin: 10px;
+}
+
+.choose-enemy-btn {
+  padding: 1.5rem;
+  min-width: 200px;
+}
+
+.choose-enemy-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  line-height: 1.7;
+  background-color: var(--main);
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: lighter;
+  opacity: 0;
+  transform: translate(-50%, -150%);
+  transition: transform 0.4s ease-in;
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.enemy {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: var(--transition);
+}
+
+.enemy.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.enemy img {
+  width: 100px;
+  height: 100px;
+}
