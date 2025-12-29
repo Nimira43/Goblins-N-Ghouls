@@ -60,7 +60,7 @@ p {
 }
 
 .screen.up {
-  margin-top: -200vh;
+  margin-top: -100vh;
 }
 
 .screen-2-title {
@@ -123,7 +123,7 @@ p {
   font-weight: lighter;
   opacity: 0;
   transform: translate(-50%, -150%);
-  transition: var(--transition);
+  transition: transform 0.4s ease-in;
 }
 
 .message.visible {

@@ -8,25 +8,29 @@ const message = document.getElementById('message')
 
 let seconds = 0
 let score = 0
-let selectedEnemy = []
+let selectedEnemy = null
+let timer = null
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'))
 
 chooseEnemyBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const img = btn.querySelector('img')
-    const src = img.getAttribute('src')
-    const alt = img.getAttribute('alt')
-    selectedEnemy = { src, alt }
+    selectedEnemy = {
+      src: img.getAttribute('src'),
+      alt: img.getAttribute('alt')
+    }
+
     screens[1].classList.add('up')
     setTimeout(createEnemy, 1000)
     startGame()
   })
 })
 
-
 function startGame() {
-  setInterval(increaseTime, 1000)
+  if (!timer) {
+    timer = setInterval(increaseTime, 1000)
+  }
 }
 
 function increaseTime() { 
@@ -77,6 +81,8 @@ function addEnemies() {
 
 function increaseScore() {
   score++
-  if (score > 19) message.classList.add('visible')
+  if (score > 19) {
+    message.classList.add('visible')
+  }
   scoreEl.innerHTML = `Score: ${score}`
 }
