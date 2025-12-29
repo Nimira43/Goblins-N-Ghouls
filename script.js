@@ -6,4 +6,8 @@ const timeEl = document.getElementById('time')
 const scoreEl = document.getElementById('score')
 const message = document.getElementById('message')
 
+let seconds = 0
+let score = 0
+let selectedEnemy = []
+
 screens[0].classList.add('up')
