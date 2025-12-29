@@ -17,7 +17,10 @@ chooseEnemyBtns.forEach(btn => {
     const img = btn.querySelector('img')
     const src = img.getAttribute('src')
     const alt = img.getAttribute('alt')
-    
+    selectedEnemy = { src, alt }
+    screens[1].classList.add('up')
+    setTimeout(createEnemy, 1000)
+    startGame()
   })
 })
 
