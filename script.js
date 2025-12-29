@@ -12,7 +12,9 @@ let selectedEnemy = []
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'))
 
-function startGame() {}
+function startGame() {
+  setInterval(increaseTime, 1000)
+}
 
 function increaseTime() { 
   let m = Math.floor(seconds / 60)
@@ -21,8 +23,6 @@ function increaseTime() {
   s = s < 10 ? `0${s}` : s
   timeEl.innerHTML = `Time: ${m}:${s}`
   seconds++
-
-
 }
 
 function createEnemy() {
