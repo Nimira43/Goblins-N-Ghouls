@@ -20,7 +20,13 @@ function createEnemy() {
   const { x, y } = getRandomLocation()
   enemy.style.top = `${y}px`
   enemy.style.left = `${x}px`
-  
+  enemy.innerHTML = `
+    <img
+      src='${selectedEnemy.src}' 
+      alt='${selectedEnemy.alt}' 
+      style='transform: rotate(${Math.random() * 360}deg)'
+    />
+  `
 }
 
 function getRandomLocation() {
