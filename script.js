@@ -10,4 +10,4 @@ let seconds = 0
 let score = 0
 let selectedEnemy = []
 
-screens[0].classList.add('up')
+startBtn.addEventListener('click', () => screens[0].classList.add('up'))
